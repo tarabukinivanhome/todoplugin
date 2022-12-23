@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Запускатор вкладок</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <style>
+        html, body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 180px;
+      padding: 0;
+      width: 380px;
+	  border: 1px solid #ccc;
+    }
+    h1 {
+      font-family: 'Menlo', monospace;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      color: #2f5876;
+    }
+    a:link,
+    a:visited {
+      color: #000000;
+      outline: 0;
+      text-decoration: none;
+    }
+    img {
+      width: 30px; /*ширина изображений*/
+    }
+    .modal-header {
+      align-items: center; /*выравнивание элементов по центру*/
+      border-bottom: 0.5px solid #dadada; /*свойства нижней разделительной линии*/
+      height: 50px;
+    }
+    .add-del {
+      padding: 0 22px; /*отступы сверху и снизу, сверху и слева*/
+    }
+    .modal-icons {
+      border-top: 0.5px solid #dadada; /*свойства верхней разделительной линии*/
+      height: 50px;
+      width: 100%;
+    }
+    .logo {
+      padding: 16px; /*отступы со всех сторон*/
+    }
+    .logo-icon {
+      vertical-align: text-bottom; /*выравнивание по нижней части текста*/
+      margin-right: 12px; /*задётся отступ элементов от изображения*/
+    }
+    .flex-container {
+      display: flex; /*отображает контейнер в виде блочного элемента*/
+      justify-content: space-around; /*равномерное выравнивание элементов*/
+      padding: 10px 0px;
+    }
+    /*задаём настройки для контейнеров с иконками*/
+    .flex {
+      opacity: 1; /*параметр непрозрачности иконок*/
+      width: 120px;
+	  align-items: flex-end;
+    }
+    .flex:hover {
+      opacity: 0.4; /*уровень непрозрачности при наведении курсора на элемент*/
+    }
+    .flex .fa {
+      font-size: 40px;
+      color: #2f5876;
+    }
+	button#add, button#del{
+		width: 120px;
+	}
+	.add-del{
+		border: 1px solid #ccc;
+	}
+    </style>  
+    <title>Document</title>
+</head>
+<body>    
+<div class="modal-header">
+    <h1 class="logo">
+        <img class="logo-icon" src="images/logo.png">Быстрые вкладки криптана        
+    </h1>
+</div> 
+<div class="modal-icons">
+    <div class="flex-container">        
+        <div class="flex">
+			<button id="add">add</button>
+        </div>
+        <div class="flex">
+			<button id="del">del</button>
+        </div>
+    </div>
+</div>
+<div class="add-del inpuwrapper">   
+		<input id = "agroup-id" type="text" name="input">
+		<input id = "aname" type="text" name="input">
+		<input id = "alink" type="text" name="input">
+		<button id = "ainpwbtn">добавить</button>
+		<input id = "add-group" type="text" name="input">
+		<button id = "add-group-btn">добавить</button>	
+</div>
+
+
+</body>
+<script src="js.js"></script>
+</html>
